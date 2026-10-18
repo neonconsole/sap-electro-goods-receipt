@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Order Receive Function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZKOF6_ORDER_RECEIVETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZKOF6_ORDER_RECEIVE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZKOF6_POST_RECEIPT</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>Post Receipt Update FM</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_RECEIPT_ITEMS</PARAMETER>
+       <TYP>ZKOF6_T_RECP_I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_RECEIPT</PARAMETER>
+       <TYP>ZKOF6_S_RECEIPT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ORDER_STATUS</PARAMETER>
+       <TYP>ZKOF6_ORDER_STATUS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_RECEIPT_ITEMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Receipt Items Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_RECEIPT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Receipt Header Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ORDER_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Status</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>M01</KEY>
+       <ENTRY>Fehler beim Buchen des Wareneingangs.</ENTRY>
+       <LENGTH>74</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>
